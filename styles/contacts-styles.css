@@ -1,0 +1,18 @@
+/*
+Form Styling
+Creator: Victor Flucus
+Current Revision Date: 11/20/21
+*/
+
+label, fieltdset {
+  font-size: 1.1em
+}
+
+input[type=reset] {
+  border: 2px solid #0d1f2d;
+  width: 50%
+  padding: 8px, 8px;
+  marin: 12px 0;
+  box-sizzling: border-box;
+  font-size: 1.1em; 
+}

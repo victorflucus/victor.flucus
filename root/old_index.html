@@ -1,10 +1,76 @@
-    {% extends 'projects/base.html' %}
+<!DOCTYPE html>
+<!--
+Name: Victor Flucus
+Crrent Revision Date: 11/20/21
+Most recent revision: original
+-->
+<html lang=:"en">
+  <head>
+      <title> Victor's Portfolio </title>
+      <style>
+        caption {
+          font-weight: bold;
+          font-size: 1.2em;
+          margin-bottom: 8px
+        }
 
-    {% load static %}
+        table, th, td {
+          border: 1px solid #0d1f2d;
+          border-collapse: collapse;
+          padding: 5px 10px;
+        }
 
-    {% block content %}
+        table {
+          width: 90%;
+          margin: auto;
+        }
 
-<section> <!-- This section element contains the three articles that make
+        tr {
+        height: 30px;
+        }
+
+        th {
+          background-color: #546a7b;
+          color: #f2eded;
+        }
+
+        tbody   tr:nth-child(odd) {
+          background-color: #e4c3ad;
+        }
+
+        article img {
+          float:left;
+        }
+
+        .right-content {
+          float:left;
+        }
+
+        article {
+          margin-bottom: 16px
+        }
+      </style>
+      <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main> <!--The main element contains all blocks on the page. -->
+      <header><!-- The header element contains the title. -->
+        <h1> Portfolio for Victor Flucus </h1>
+      </header>
+
+      <nav> <!-- Useful navigation links. -->
+        <p><a href="">Home</a></p>
+        <p><a href="projects.html">My project work</a></p>
+        <p><a href="contact.html">Contact me</a><p>
+        <p><a href="testemonials.html">Hear what others have to say</a></p>
+        <p><a href="https://www.linkedin.com/in/victorjflucus/" target="_blank">See my Linkedin</a></p>
+        <div class="clear-float"></div>
+      </nav>
+
+      <hr />
+
+      <section> <!-- This section element contains the three articles that make
         up my webpage. -->
         <article class="border" id="about-me">
         <h2><em> About me </em></h2>
@@ -78,4 +144,11 @@
         </article>
       </section>
 
-    {% endblock %}
+        <footer> <!-- Exists at the bottom of the page and wil contain copyright
+          and other clerical information. -->
+          <p> &copy; Victor Flucus. All rights reserved. </p>
+        </footer>
+
+      </main>
+  </body>
+</html>
